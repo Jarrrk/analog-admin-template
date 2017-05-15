@@ -5,7 +5,7 @@ Alanlog multipurpose Dashboard + Ui kit for your upcoming projects
 ### Installation
 
 Inside the root folder Run
-`np install`
+`npm install`
 
 then run
 `gulp`
