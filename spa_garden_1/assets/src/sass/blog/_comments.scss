@@ -1,0 +1,69 @@
+.an-comment-section {
+  position: relative;
+  padding: $padding-base * 2 0 0;
+}
+
+.an-comment-single {
+  position: relative;
+  width: 100%;
+  @include display(flex);
+  @include align-items(stretch);
+  background: $body-bg;
+  margin-bottom: $margin-base;
+
+  &.comment-reply {
+    margin-left: $margin-base * 2;
+  }
+
+  .comment-img {
+    min-width: 140px;
+    display: block;
+  }
+
+  h5 {
+    margin-top: 0;
+    a {
+      color: $font-color-base;
+      @extend .text-uppercase;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    span {
+      color: $font-color-light;
+      font-weight: $font-weight-regular;
+      padding-left: $padding-small;
+      font-family: $font-family-primary;
+    }
+  }
+
+  .comment-details {
+    padding: $padding-base;
+    background: $light-gray;
+
+    p {
+      color: $font-color-light;
+      font-weight: $font-weight-regular;
+    }
+
+    .reply-link {
+      color: $color-primary;
+      @extend .text-uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.an-write-comment {
+  position: relative;
+  padding-top: $padding-base * 2;
+
+  label {
+    color: $font-color-base;
+    font-weight: $font-weight-regular;
+  }
+}
+

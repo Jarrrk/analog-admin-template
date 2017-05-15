@@ -1,0 +1,12 @@
+.an-footer {
+  position: relative;
+  padding: $padding-base * 2 0;
+  background: $demo-bg;
+  text-align: center;
+
+  p {
+    color: $base-font-color-light;
+    font-size: $font-size-base - 1;
+    margin: 0;
+  }
+}

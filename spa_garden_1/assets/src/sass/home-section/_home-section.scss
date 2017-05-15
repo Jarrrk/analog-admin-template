@@ -1,0 +1,167 @@
+.an-home-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  .banner-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    @include display(flex);
+    @include align-items(center);
+    background: transparent;
+
+    @media (max-width: $screen-sm) {
+      height: auto;
+    }
+
+    &.inner-banner {
+      height: 350px;
+    }
+
+    &.blog-post {
+      height: 600px;
+    }
+
+    &.home-slider {
+      .owl-pagination {
+        display: none;
+      }
+      .owl-buttons {
+        width: 100%;
+        display: block;
+        .owl-next,
+        .owl-prev {
+          position: absolute;
+          font-family: "Ionicons";
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          line-height: 40px;
+          color: $font-color-white;
+          background: $color-primary;
+          opacity: 1;
+          padding: 0;
+          @include transition;
+          &:hover {
+            background: darken($color-primary, 10%);
+          }
+
+        }
+        .owl-next {
+          right: 10px;
+        }
+
+        .owl-prev {
+          left: 10px;
+        }
+      }
+      .owl-theme .owl-controls {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin: 0;
+        z-index: 12;
+        margin-top: -20px;
+      }
+      .home-banner-content {
+        position: relative;
+        height: 800px;
+        display: flex;
+        @include align-items(center);
+        .container {
+          z-index: 10;
+        }
+
+        @media (max-width: $screen-sm) {
+          height: auto;
+          padding: $padding-base * 2  $padding-base * 3;
+        }
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($color-black, .6);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+  }
+
+  .home-banner-content {
+    position: relative;
+    @extend .text-center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+
+    @media (max-width: $screen-sm) {
+      padding: $padding-large 0;
+    }
+
+    h2 {
+      color: $font-color-white;
+      margin-top: 0;
+      font-weight: $font-weight-light;
+      padding-bottom: $padding-base;
+      @media (max-width: $screen-xs) {
+        font-size: $font-size-h4;
+      }
+    }
+
+    h1 {
+      color: $font-color-white;
+      margin-top: 0;
+      font-size: $font-size-base * 3;
+      font-weight: $font-weight-regular;
+      @extend .text-uppercase;
+
+      @media (max-width: $screen-xs) {
+        font-size: $font-size-h3;
+        line-height: $font-size-h2;
+      }
+      span {
+        font-weight: $font-weight-semibold;
+        color: $color-primary;
+      }
+
+      b {
+        font-weight: $font-weight-light;
+        font-style: italic;
+      }
+    }
+
+    p {
+      font-size: $font-size-h3;
+      color: $font-color-white;
+      padding-top: $padding-base;
+      font-weight: $font-weight-light;
+      line-height: $font-size-h2;
+      margin-bottom: $margin-base * 3;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      span {
+        color: $color-primary;
+        font-weight: $font-weight-bold;
+      }
+      @media (max-width: $screen-xs) {
+        font-size: $font-size-h5;
+        line-height: $font-size-h4;
+      }
+    }
+
+    button,
+    a {
+      margin: 0 $margin-base;
+      @media (max-width: $screen-xs) {
+        margin: 0 $margin-small - 5;
+        margin-bottom: $margin-small;
+      }
+    }
+  }
+}

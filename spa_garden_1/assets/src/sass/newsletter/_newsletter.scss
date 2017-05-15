@@ -1,0 +1,40 @@
+.an-newsletter {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  @extend .text-center;
+
+  h2 {
+    margin: 0;
+    color: $font-color-white;
+    font-weight: $font-weight-regular;
+    padding-bottom: $padding-small;
+
+    @media (max-width: $screen-xs) {
+      font-size: $font-size-h3;
+    }
+  }
+
+  p {
+    color: $font-color-white;
+    padding-bottom: $padding-base;
+  }
+
+  .an-form {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  &.with-primary-color {
+    .an-form {
+      .an-btn-default {
+        background: $font-color-base;
+      }
+      input {
+        &:focus {
+          border-color: $font-color-base;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.an-hero-block {
+  position: relative;
+  width: 100%;
+
+  .col-md-4 {
+    padding: 0;
+  }
+
+  .an-hero-single {
+    position: relative;
+    width: 100%;
+    padding: $padding-medium * 2.5 $padding-medium * 2;
+    color: $font-color-white;
+    @extend .text-center;
+
+    i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 100px;
+      z-index: 9;
+    }
+
+    h4 {
+      position: relative;
+      z-index: 10;
+      @extend .text-uppercase;
+      color: $font-color-white;
+      padding-bottom: $padding-medium;
+      font-size: $font-size-h3;
+      font-weight: $font-weight-semibold;
+      margin: 0;
+    }
+
+    p {
+      position: relative;
+      z-index: 10;
+      margin: 0;
+    }
+
+    &.one {
+      background: $hero-one;
+      i {
+        color: darken($hero-one, 10%);
+      }
+    }
+
+    &.two {
+      background: $hero-two;
+      i {
+        color: darken($hero-two, 10%);
+      }
+    }
+
+    &.three {
+      background: $hero-three;
+      i {
+        color: darken($hero-three, 10%);
+      }
+    }
+  }
+}

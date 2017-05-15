@@ -1,0 +1,13 @@
+.an-header {
+  position: relative;
+  width: 100%;
+
+
+  .navbar-default {
+    @include border-radius(0);
+    //background: transparent;
+    background: $color-content-bg-white;
+    @include an-box-shadow();
+    @include transition();
+  }
+}

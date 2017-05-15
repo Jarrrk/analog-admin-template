@@ -1,0 +1,108 @@
+@import 'navbar-brand';
+@import 'navbar-dropdown';
+//@import 'navbar-right';
+
+.navbar-default {
+  border: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $screen-menu-breakpoint) {
+    overflow: hidden;
+  }
+  .navbar-brand {
+    @include navbar-brand;
+  }
+
+  .navbar-nav {
+    float: right;
+    margin-right: -15px;
+    > .open {
+      > a {
+        color: $color-primary;
+        background: transparent;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $color-primary;
+          background: transparent;
+        }
+      }
+    }
+    > li {
+      margin-left: $margin-small - 5;
+
+      &:last-child {
+        a {
+          padding-right: 0;
+        }
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
+      &.dropdown {
+
+        &:hover {
+          .dropdown-menu {
+            @media (min-width: $screen-md) {
+              visibility: visible;
+              opacity: 1;
+              top: 100%;
+            }
+          }
+        }
+      }
+
+      > a {
+        color: $font-color-base;
+        padding-top: $padding-large;
+        padding-bottom: $padding-large;
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-base - 1;
+        @extend .text-uppercase;
+        .caret {
+          display: none;
+        }
+
+        i {
+          font-size: $font-size-base + 4;
+          padding-right: $padding-small - 5;
+          position: relative;
+          top: 1px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          color: $color-primary;
+          background: transparent;
+        }
+      }
+      &.active {
+        > a {
+          background: transparent;
+          color: $color-primary;
+          &:hover,
+          &:focus,
+          &:active{
+            background: transparent;
+            color: $color-primary;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        @include dropdown();
+
+        li {
+          a {
+            font-family: $font-family-secondary;
+            font-weight: $font-weight-semibold;
+            font-size: $font-size-base - 1;
+            @extend .text-uppercase;
+          }
+        }
+      }
+    }
+  }
+}

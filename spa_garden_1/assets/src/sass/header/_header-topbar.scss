@@ -1,0 +1,61 @@
+.an-header-topbar {
+  position: relative;
+  padding: $padding-small - 5 0;
+  background: $color-primary;
+  display: block;
+
+  .topbar-content {
+    position: relative;
+    width: 100%;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    ul {
+      li {
+        a:hover {
+          color: darken($font-color-white, 10%);
+        }
+      }
+    }
+  }
+}
+
+.small-social {
+  @extend .list-inline;
+  margin: 0;
+
+  li {
+    a {
+      color: $font-color-white;
+      font-size: $font-size-base + 2;
+    }
+  }
+}
+
+.an-bordered-list {
+  @extend .list-inline;
+  margin: 0;
+
+  li {
+    padding: 0 $padding-base;
+    border-right: 1px solid darken($color-primary, 20%);
+    line-height: $font-size-base;
+
+    @media (max-width: $screen-xs) {
+      &:first-child {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+    a {
+      color: $font-color-white;
+      font-size: $font-size-base - 1;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}

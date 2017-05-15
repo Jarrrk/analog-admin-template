@@ -1,0 +1,38 @@
+.an-section {
+  position: relative;
+  width: 100%;
+  padding: $padding-base * 4 0;
+  background: $color-content-bg-white;
+  @include border-radius(0);
+  @include display(block);
+
+  &.bg-primary {
+    background: $color-primary;
+  }
+
+  &.bg-light {
+    background: $light-gray;
+  }
+
+  &.no-bottom-padding {
+    padding-bottom: 0;
+  }
+
+  &.no-top-padding {
+    padding-top: 0;
+  }
+
+  &.bottom-border {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  > .overlay {
+    @extend .overlay-utility;
+    background: rgba($black, .7);
+  }
+
+  &.background-fixed {
+    background-attachment: fixed !important;
+  }
+}

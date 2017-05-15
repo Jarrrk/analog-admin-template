@@ -1,0 +1,91 @@
+.an-services {
+  position: relative;
+
+  &.top-icon {
+    .an-service-single {
+      padding-left: 0;
+
+      i {
+        position: relative;
+        margin: 0;
+        margin-bottom: $margin-base * 2;
+      }
+
+    }
+
+    &.center-align {
+      .an-service-single {
+        @extend .text-center;
+        i {
+          margin: 0 auto $margin-base * 2;
+        }
+      }
+    }
+  }
+
+  &.middle-icon {
+    .col-md-6:nth-child(2n + 1) {
+      .an-service-single {
+        @media (min-width: $screen-sm) {
+          text-align:right;
+          padding-right: $padding-medium * 3;
+          padding-left: 0;
+
+          i {
+            right: 0;
+            left: auto;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+.an-service-single {
+  position: relative;
+  margin-bottom: $margin-base * 4;
+  background: lighten($color-content-bg, 4%);
+  padding-left: $padding-medium * 3;
+  @extend .text-left;
+
+  &:hover {
+    i {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: $font-size-h1;
+    @include circle-icon-link;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    margin: 0 auto;
+    color: $font-color-base;
+    border-color: $font-color-base;
+    font-size: $font-size-base + 8;
+    @include transition();
+  }
+
+  h3 {
+    @extend .text-uppercase;
+    font-family: $font-family-secondary;
+    padding-bottom: $padding-small;
+    font-size: $font-size-h4;
+    margin: 0;
+    line-height: $line-height-base;
+  }
+
+  p {
+    color: $font-color-light;
+    margin: 0;
+    font-weight: $font-weight-regular;
+  }
+}

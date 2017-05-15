@@ -1,0 +1,10 @@
+.an-footer {
+  position: relative;
+  padding: $padding-base * 4 0 $padding-base * 3;
+  border-top: 2px solid $color-primary;
+  background: $color-content-bg-white;
+
+  .an-small-title {
+    font-size: $font-size-h4;
+  }
+}

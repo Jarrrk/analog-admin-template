@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garden v1</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRaleway:300,400,600,700%7CLibre+Baskerville:400i" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/vendor-styles.css">
+  <link rel="stylesheet" href="./assets/css/animate.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+  <!-- page loading effect -->
+  <div class="an-loader">
+    <div class="spinner7">
+      <div class="circ2"></div>
+      <div class="circ3"></div>
+      <div class="circ4"></div>
+      <div class="circ5"></div>
+    </div>
+  </div>
+  <!-- end page loading effect -->
+  <div id="an-main-wrapper">
+    <div class="an-home-section" id="home">
+      <header class="an-header">
+        <div class="an-header-topbar">
+          <div class="container">
+            <div class="topbar-content">
+              <ul class="small-social">
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+              </ul>
+
+              <ul class="an-bordered-list">
+                <li><a href="#">garden@example.com</a></li>
+                <li><a href="login.html">Sign Up / Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- end header-topbar -->
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Garden</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about-us">Team</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header> <!-- end an-header -->
+      <div class="banner-section parallax-bg" data-parallax="scroll" data-image-src="./assets/img/agency.jpg">
+        <div class="overlay"></div>
+        <div class="home-banner-content">
+          <div class="container">
+            <h2 class="wow fadeInDown">Welcome to Garden</h2>
+            <h1 class="wow fadeInDown">Best way to start your <span>Business.</span></h1>
+            <p class="wow fadeInUp">We are the creative company to help your business grow.</p>
+            <button class="an-btn an-btn-default btn-big wow fadeIn">Know Us</button>
+            <button class="an-btn an-btn-white-transparent btn-big wow fadeIn">Buy Analog</button>
+          </div>
+        </div>
+      </div> <!-- end banner-section -->
+
+      <div class="an-hero-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="an-hero-single one">
+                <i class="ion-paintbrush"></i>
+                <h4>Design &amp; Branding</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="an-hero-single two">
+                <i class="ion-stats-bars"></i>
+                <h4>Market Strategy</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="an-hero-single three">
+                <i class="ion-android-call"></i>
+                <h4>Communications</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end an-hero-section -->
+    </div> <!-- end and-home-section -->
+
+    <div class="an-section" id="work">
+      <div class="an-title-content">
+        <h1>What we do</h1>
+        <p>Here are some of works done by our company.</p>
+      </div> <!-- end and-title-container -->
+
+      <div class="an-portfolio-section">
+        <div class="button-group filter-button-group  text-center">
+          <button class="an-btn" data-filter="*">All</button>
+          <button  class="an-btn" data-filter=".design">Design</button>
+          <button class="an-btn" data-filter=".development">Development</button>
+          <button class="an-btn" data-filter=".ui">Ui</button>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="an-item-width development ui" style="background: url('./assets/img/portfolio/p-10.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Design &amp; Atrs</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design ui" style="background: url('./assets/img/portfolio/p-1.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Creative Work</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width width-2 height-2 ui development" style="background: url('./assets/img/portfolio/p-2.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>UX / UI</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width width-2 design" style="background: url('./assets/img/portfolio/p-7.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Business</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design development" style="background: url('./assets/img/portfolio/p-5.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Development</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width ui development" style="background: url('./assets/img/portfolio/p-4.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Branding &amp; management</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design ui" style="background: url('./assets/img/portfolio/p-3.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Design</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design ui" style="background: url('./assets/img/portfolio/p-8.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Art Work</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width ui development" style="background: url('./assets/img/portfolio/p-9.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Self Made</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design ui" style="background: url('./assets/img/portfolio/p-11.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Communications</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width  ui" style="background: url('./assets/img/portfolio/p-7.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Skills</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="an-item-width design" style="background: url('./assets/img/portfolio/p-1.jpg') center center no-repeat; background-size: cover;">
+              <div class="an-porfolio-single">
+                <a href="#">
+                  <div class="overlay">
+                    <i class="ion-ios-redo"></i>
+                    <div class="project-details">
+                      <h4>Loren Ipsum Dolor</h4>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end an-portfolio-section -->
+    </div> <!-- end an-section  portfolio -->
+
+    <div class="an-section no-bottom-padding" id="service">
+      <div class="an-title-content">
+        <h1>What you can get</h1>
+        <p>The services you can get from us.</p>
+      </div> <!-- end and-title-container -->
+
+      <div class="an-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-ios-flag"></i>
+                <h3>Digital Services</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-ios-cart"></i>
+                <h3>Shop Marketing</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-trophy"></i>
+                <h3>Branding Services</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-coffee"></i>
+                <h3>Business Partner</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-cash"></i>
+                <h3>Premium Consultant</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="an-service-single wow fadeIn">
+                <i class="ion-radio-waves"></i>
+                <h3>Specialties </h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </p>
+              </div> <!-- end an-service-single -->
+            </div>
+          </div>
+        </div>
+      </div> <!-- end an-services -->
+    </div> <!-- end an-section  service-->
+
+    <div class="an-section has-bg-img background-fixed"  style="background: url('./assets/img/fact.jpg') center center no-repeat; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="an-fact-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-xs-6">
+              <div class="an-fact-single">
+                <h1 class="counter">2,345</h1>
+                <h4>Cups of Coffee</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="an-fact-single">
+                <h1 class="counter">1, 14, 569</h1>
+                <h4>Lines of Code</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="an-fact-single">
+                <h1 class="counter">500 +</h1>
+                <h4>Hours spending</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <div class="an-fact-single no-border">
+                <h1 class="counter">2,879</h1>
+                <h4>Pull requests</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end section some fact -->
+
+    <div class="an-section" id="about-us">
+      <div class="an-title-content">
+        <h1>Our Nucleus</h1>
+        <p>Meet our amazing team members.</p>
+      </div> <!-- end and-title-container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="an-team-single wow fadeIn">
+              <div class="image-container">
+                <img src="./assets/img/users/user1.jpg" alt="">
+                <div class="overlay">
+                  <ul class="small-social">
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-details">
+                <h4><a href="#">Maxwell</a></h4>
+                <p>Ceo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="an-team-single wow fadeIn">
+              <div class="image-container">
+                <img src="./assets/img/users/user2.jpg" alt="">
+                <div class="overlay">
+                  <ul class="small-social">
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-details">
+                <h4><a href="#">Emma Ariya</a></h4>
+                <p>Chief of Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="an-team-single wow fadeIn">
+              <div class="image-container">
+                <img src="./assets/img/users/user3.jpg" alt="">
+                <div class="overlay">
+                  <ul class="small-social">
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-details">
+                <h4><a href="#">Gilfo William</a></h4>
+                <p>Cto</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="an-team-single wow fadeIn">
+              <div class="image-container">
+                <img src="./assets/img/users/user4.jpg" alt="">
+                <div class="overlay">
+                  <ul class="small-social">
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-details">
+                <h4><a href="#">Stone Jones</a></h4>
+                <p>Marketing Head</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end row -->
+      </div>
+    </div> <!-- end an-section team -->
+
+    <div class="an-section has-bg-image background-fixed" style="background: url('./assets/img/testimonial.jpg') center center no-repeat; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="an-title-content has-bg-img">
+        <h1>What clients says</h1>
+        <p>Some of our cool clients talked about us.</p>
+      </div> <!-- end and-title-container -->
+
+      <div class="owl-carousel default-slider testimonial with-bg">
+        <div>
+          <div class="testimonial-single">
+            <i class="ion-quote"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+            </p>
+            <cite>- <a href="#">John snow</a></cite>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-single">
+            <i class="ion-quote"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+            </p>
+            <cite>- <a href="#">John snow</a></cite>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-single">
+            <i class="ion-quote"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+            </p>
+            <cite>- <a href="#">John snow</a></cite>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end an-section testimonial -->
+
+    <div class="an-section" id="pricing">
+      <div class="an-title-content">
+        <h1>Our Pricing</h1>
+        <p>Flexible price pack for you.</p>
+      </div> <!-- end and-title-container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="an-pricing-table-single  wow fadeIn">
+              <div class="price-header">
+                <h3 class="plan-name">Basic</h3>
+                <h1 class="plan-price"><span>$</span>17.69<small>/ Month</small></h1>
+              </div>
+              <ul class="feature-lists">
+                <li>Unlimited browsing</li>
+                <li>10 Members</li>
+                <li>2GB Downloads</li>
+                <li>10 Add post</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+              <div class="price-footer">
+                <button class="an-btn an-btn-default fluid">Choose Plan</button>
+              </div>
+            </div>
+
+            <!-- end .AN-SINGEL-uSEr-MAIN-BODY -->
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="an-pricing-table-single standard wow fadeIn">
+              <div class="price-header">
+                <h3 class="plan-name">Standard</h3>
+                <h1 class="plan-price"><span>$</span>49.99<small>/ Month</small></h1>
+              </div>
+              <ul class="feature-lists">
+                <li>Unlimited browsing</li>
+                <li>20 Members</li>
+                <li>10GB Downloads</li>
+                <li>100 Add post</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+              <div class="price-footer">
+                <button class="an-btn an-btn-accents fluid">Choose Plan</button>
+              </div>
+            </div> <!-- end an-pricing-table-singl -->
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="an-pricing-table-single plan-gold wow fadeIn" data-wow-delay=".1s">
+              <div class="price-header">
+                <h3 class="plan-name">Gold</h3>
+                <h1 class="plan-price"><span>$</span>119.99<small>/ Month</small></h1>
+              </div>
+              <ul class="feature-lists">
+                <li>Unlimited browsing</li>
+                <li>100 Members</li>
+                <li>Unlimited Downloads</li>
+                <li>500 Add post</li>
+                <li>5GB server storage</li>
+                <li>-</li>
+              </ul>
+              <div class="price-footer">
+                <button class="an-btn an-btn-blue fluid">Choose Plan</button>
+              </div>
+            </div> <!-- end an-pricing-table-singl -->
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="an-pricing-table-single plan-plutinum wow fadeIn" data-wow-delay=".2s">
+              <div class="price-header">
+                <h3 class="plan-name">Plutinum</h3>
+                <h1 class="plan-price"><span>$</span>159.99<small>/ Month</small></h1>
+              </div>
+              <ul class="feature-lists">
+                <li>Unlimited browsing</li>
+                <li>Unlimited Members</li>
+                <li>Unlimited Downloads</li>
+                <li>Unlimited Add post</li>
+                <li>10GB server storage</li>
+                <li>Loren Ipsum</li>
+              </ul>
+              <div class="price-footer">
+                <button class="an-btn an-btn-purple fluid">Choose Plan</button>
+              </div>
+            </div> <!-- end an-pricing-table-singl -->
+          </div>
+        </div> <!-- end row -->
+      </div>
+    </div> <!-- end an-section -->
+
+    <div class="an-section bg-primary">
+      <div class="container">
+        <div class="an-calltoaction">
+          <div class="row">
+            <div class="col-sm-8">
+              <h2>Hey, interested to work with us.</h2>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking.</p>
+            </div>
+            <div class="col-sm-4 text-right">
+              <a class="an-btn an-btn-white-transparent" href="#">Message Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end an-section cta -->
+
+    <div class="an-section" id="blog">
+      <div class="an-title-content">
+        <h1>Latest news</h1>
+        <p>Read latest from our blog.</p>
+      </div> <!-- end and-title-container -->
+
+      <div class="an-blog-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-1.jpg') center center no-repeat;
+                  background-size:cover;">
+                  <div class="details">
+                    <h3><a href="#">10 Things you need to do.</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a> on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-2.jpg') center center no-repeat;
+                  background-size:cover;">
+
+                  <div class="details">
+                    <h3><a href="#">Code you love</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a> on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-3.jpg') center center no-repeat;
+                  background-size:cover;">
+
+                  <div class="details">
+                    <h3><a href="#">You are not alone</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a> on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-4.jpg') center center no-repeat;
+                  background-size:cover;">
+
+                  <div class="details">
+                    <h3><a href="#">Think out of the box</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a> on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-5.jpg') center center no-repeat;
+                  background-size:cover;">
+
+                  <div class="details">
+                    <h3><a href="#">Life is not a straight line.</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a> on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="an-blog-single wow fadeIn">
+                <div class="blog-image-container"
+                  style="background: url('./assets/img/blog/post-6.jpg') center center no-repeat;
+                  background-size:cover;">
+
+                  <div class="details">
+                    <h3><a href="#">Take healthy food.</a></h3>
+                    <div class="blog-meta">
+                      <p>By <a href="#">Admin</a>on <a href="#">31 Jan 2017</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end an-blog-single wow fadeIn -->
+            </div>
+          </div> <!-- end row -->
+        </div>
+      </div> <!-- end an-about us -->
+    </div> <!-- end an-section blog -->
+
+    <div class="an-section has-bg-img" style="background: url('./assets/img/newsletter.jpg') center center no-repeat; background-size: cover;">
+      <div class="overlay"></div>
+      <div class="an-newsletter">
+        <div class="container">
+          <h2>Want to stay up to date.</h2>
+          <p>Please subscribe our newsletter.</p>
+          <form action="#" class="an-form">
+            <input type="email" class="an-form-control dark" placeholder="E-mail">
+            <button type="submit" class="an-btn an-btn-default btn-submit-full"><i class="ion-ios-paperplane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="an-section no-bottom-padding" id="contact">
+      <div class="an-title-content">
+        <h1>Contact us</h1>
+        <p>How can we help you.</p>
+      </div> <!-- end and-title-container -->
+      <div class="an-contact-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h4 class="an-title-xs">Our office</h4>
+              <div class="an-address-single">
+                <p><i class="ion-android-call"></i>+012345 6789</p>
+                <p><i class="ion-android-mail"></i>example@example.com</p>
+                <p><i class="ion-map"></i>West end 41str, San Francisco,<br> 0123456 California, US</p>
+              </div> <!-- end an-address-single -->
+
+              <h4 class="an-title-xs">We are on social</h4>
+              <div class="an-address-single">
+                <p><i class="ion-social-facebook"></i><a href="#">facebook.com/garden</a></p>
+                <p><i class="ion-social-twitter"></i><a href="#">twitter.com/garden</a></p>
+                <p><i class="ion-social-github"></i><a href="#">github.com/garden</a></p>
+              </div> <!-- end an-address-single -->
+            </div>
+            <div class="col-sm-6">
+              <h4 class="an-title-xs">Send us a message</h4>
+              <form action="#">
+                <label>Email</label>
+                <input type="text" class="an-form-control">
+
+                <label>Subject</label>
+                <input type="text" class="an-form-control">
+
+                <label>Message</label>
+                <textarea class="an-form-control"></textarea>
+
+                <button class="an-btn an-btn-default">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="an-map-content">
+          <div id="nightstyled-map"></div>
+        </div> <!-- end .AN-CHART-CONTENT -->
+      </div>
+    </div> <!-- end an-section contact -->
+    <!-- end container -->
+
+    <footer class="an-footer">
+      <div class="container">
+        <div class="an-footer-top">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="an-footer-category-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <h4 class="an-small-title">Follow Us</h4>
+              <ul class="an-social-icons">
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="an-footer-bottom">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="an-widget">
+                <a class="an-logo" href="#">Gargen</a>
+                <p class="copyrights">© 2017 Analog.<br>All rights reserved</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="an-widget">
+                <h4 class="an-small-title light-color">Contact</h4>
+                <p>149 Back Street, NY</p>
+                <p>W3 7QR</p>
+                <p>+ 223 546 789</p>
+                <p>garden@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="an-widget">
+                <h4 class="an-small-title light-color">Help</h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  It has roots in a piece of classical Latin.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1 col-sm-6">
+              <div class="an-widget newsletter">
+                <h4 class="an-small-title light-color">Subscribe to our news</h4>
+                <form action="#" class="an-form">
+                  <input type="email" class="an-form-control dark" placeholder="E-mail">
+                  <button type="submit" class="an-btn an-btn-default btn-submit-full"><i class="ion-ios-paperplane"></i></button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end container -->
+    </footer> <!-- end an-footer -->
+  </div> <!-- end main wrapper -->
+  <script src="./assets/js-plugins/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="./assets/js/contact-map.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz66OfmgniIIBeyAx_u5IB-_DB4E-e_LI&callback=initMap"></script>
+  <script src="./assets/js-plugins/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js-plugins/isotope.pkg.min.js" type="text/javascript"></script>
+  <script src="./assets/js-plugins/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="./assets/js-plugins/wow.min.js" type="text/javascript"></script>
+  <script src="./assets/js-plugins/parallax.min.js" type="text/javascript"></script>
+  <script src="./assets/js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>

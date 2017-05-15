@@ -1,0 +1,85 @@
+.an-team-single {
+  position: relative;
+  width: 100%;
+  @include transition;
+  margin-bottom: $margin-base * 2;
+
+  &:hover {
+    @include an-box-shadow;
+
+    .image-container {
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &.light-bg {
+    .user-details {
+      background: $light-gray;
+      h4 a, p {
+        color: $font-color-base
+      }
+    }
+  }
+
+  .image-container {
+    position: relative;
+
+    .overlay {
+      @extend .overlay-utility;
+      background: rgba($black, .6);
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+      @include transition();
+
+      opacity: 0;
+      visibility: hidden;
+
+      .small-social {
+        li {
+          a {
+            i {
+              font-size: $font-size-h3;
+            }
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .user-details {
+    padding: $padding-base;
+    background: $color-primary;
+    h4 {
+      margin: 0;
+      @extend .text-uppercase;
+      line-height: $line-height-base;
+      a {
+        color: $font-color-white;
+        display: block;
+      }
+    }
+    p {
+      margin: 0;
+      color: $font-color-white;
+      @extend .text-uppercase;
+      font-size: $font-size-base - 1;
+      font-style: italic;
+    }
+
+    .small-social {
+      padding-top: $padding-base;
+    }
+  }
+}

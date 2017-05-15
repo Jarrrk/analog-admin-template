@@ -1,0 +1,40 @@
+.an-title-content {
+  position: relative;
+  width: 100%;
+  @extend .text-center;
+  padding-bottom: $padding-base * 3;
+  z-index: 10;
+
+  &.has-bg-img  {
+    h1 {
+      color: $font-color-white;
+    }
+    p {
+      color: $font-color-white;
+    }
+  }
+
+  h1 {
+    position: relative;
+    z-index: 10;
+    font-size: $font-size-h2;
+    @extend .text-uppercase;
+    color: $font-color-base;
+    font-weight: $font-weight-semibold;
+    margin: 0;
+
+    @media (max-width: $screen-xs) {
+      font-size: $font-size-h3;
+    }
+  }
+
+
+  p {
+    font-size: $font-size-base + 2;
+    font-family: $font-family-primary;
+    max-width: 780px;
+    margin: 0 auto;
+    color: $font-color-light;
+    font-weight: $font-weight-regular;
+  }
+}
